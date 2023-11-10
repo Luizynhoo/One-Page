@@ -78,6 +78,11 @@ body {
     justify-content: space-evenly;
 }
 
+.flex5{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
 .card{
     margin-top: 20px;
     width: 338px;
