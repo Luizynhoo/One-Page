@@ -31,6 +31,10 @@
     border: 0;
 }
 
+html{
+    scroll-behavior: smooth; /*para a animação de rolagem ficar suave*/
+}
+
 body {
     font-family: var(--font-texto);
     font-size: 1.2em;
@@ -83,6 +87,12 @@ body {
     flex-direction: column-reverse;
 }
 
+.flex6{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Conteudo */
 .card{
     margin-top: 20px;
     width: 338px;
@@ -306,6 +316,10 @@ footer{
     margin-bottom: 25px;
 }
 
+.social a{
+    text-decoration: none;
+}
+
 
 
 /*SMARTPHONE LANDSCAPE*/
@@ -328,6 +342,13 @@ footer{
     .video iframe {
         width: 560px;
         height: 315px;
+    }
+
+    /* Rodapé */
+    .flex5{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;    
     }
 
 }
@@ -451,6 +472,23 @@ footer{
     
     .qrcode{
         display: inline;
+    }
+
+    /* Rodapé */
+    .icone_local{
+        display: inline;
+    }
+
+    .icone_mapa{
+        display: none;
+    }
+
+    .google-maps{
+        display: inline;
+    }
+
+    .flex6{
+        flex-direction: row-reverse;
     }
 
 }
